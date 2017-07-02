@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FunFacts2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +21,83 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3hT-c4-z9b">
+                                <rect key="frame" x="168" y="557" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="PyV-Dv-sf7"/>
+                                    <constraint firstAttribute="width" constant="40" id="yzJ-xg-nGq"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="heart_3"/>
+                                <connections>
+                                    <action selector="showMushyFact" destination="BYZ-38-t0r" eventType="touchUpInside" id="nEK-uL-gE4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MLU-vh-brK">
+                                <rect key="frame" x="75" y="557" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="UwU-rs-LjN"/>
+                                    <constraint firstAttribute="height" constant="40" id="aGS-oy-oin"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="smile_3"/>
+                                <connections>
+                                    <action selector="showFunnyFact" destination="BYZ-38-t0r" eventType="touchUpInside" id="VNH-dT-Q4l"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gz9-S4-1Mc">
+                                <rect key="frame" x="261" y="557" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="hlG-8F-low"/>
+                                    <constraint firstAttribute="height" constant="40" id="t3X-J6-MLv"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="cry_3"/>
+                                <connections>
+                                    <action selector="showSadFact" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zjo-RI-bu8"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The voice of Winnie the Pooh and Tigger, Jim Cummings, calls children's hospitals in his spare time to cheer up sick children." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QNp-md-caq">
+                                <rect key="frame" x="36" y="291" width="303" height="86"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fun Facts" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XMM-h1-u8A">
+                                <rect key="frame" x="119" y="90" width="137" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="0.5" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.75268024206161499" green="0.22574925422668457" blue="0.16713020205497742" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="XMM-h1-u8A" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="70" id="6AX-pO-pMa"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="gz9-S4-1Mc" secondAttribute="bottom" constant="70" id="B6d-l5-AKF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QNp-md-caq" secondAttribute="trailing" constant="20" id="CUp-ox-si6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gz9-S4-1Mc" secondAttribute="trailing" constant="58" id="FPX-XR-4QV"/>
+                            <constraint firstItem="3hT-c4-z9b" firstAttribute="leading" secondItem="MLU-vh-brK" secondAttribute="trailing" constant="53" id="H2V-rM-ac9"/>
+                            <constraint firstItem="XMM-h1-u8A" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="103" id="NcV-Tz-ZLe"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="MLU-vh-brK" secondAttribute="bottom" constant="70" id="Otf-0k-LKj"/>
+                            <constraint firstItem="QNp-md-caq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="SIA-w3-Wxr"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="3hT-c4-z9b" secondAttribute="bottom" constant="70" id="hLk-M3-Lyh"/>
+                            <constraint firstItem="QNp-md-caq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="jc6-9i-6gM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XMM-h1-u8A" secondAttribute="trailing" constant="103" id="lnJ-Gy-wvk"/>
+                            <constraint firstItem="gz9-S4-1Mc" firstAttribute="leading" secondItem="3hT-c4-z9b" secondAttribute="trailing" constant="53" id="ma6-7S-uvE"/>
+                            <constraint firstItem="MLU-vh-brK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="59" id="sQ6-IT-FKW"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="factLabel" destination="QNp-md-caq" id="meY-yo-hAY"/>
+                        <outlet property="titleLabel" destination="XMM-h1-u8A" id="ZHA-7Q-MvH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-79.200000000000003" y="138.98050974512745"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="cry_3" width="128" height="128"/>
+        <image name="heart_3" width="128" height="128"/>
+        <image name="smile_3" width="128" height="128"/>
+    </resources>
 </document>

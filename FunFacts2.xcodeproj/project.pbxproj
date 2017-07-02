@@ -12,6 +12,8 @@
 		F3B7BE121F05F21C00AFC255 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3B7BE101F05F21C00AFC255 /* Main.storyboard */; };
 		F3B7BE141F05F21C00AFC255 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3B7BE131F05F21C00AFC255 /* Assets.xcassets */; };
 		F3B7BE171F05F21C00AFC255 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3B7BE151F05F21C00AFC255 /* LaunchScreen.storyboard */; };
+		F3B7BE1F1F06017800AFC255 /* FactProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B7BE1E1F06017800AFC255 /* FactProvider.swift */; };
+		F3E7ECEB1F06215F007564BB /* BackgroundColorProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7ECEA1F06215F007564BB /* BackgroundColorProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		F3B7BE131F05F21C00AFC255 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3B7BE161F05F21C00AFC255 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F3B7BE181F05F21C00AFC255 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3B7BE1E1F06017800AFC255 /* FactProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactProvider.swift; sourceTree = "<group>"; };
+		F3E7ECEA1F06215F007564BB /* BackgroundColorProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundColorProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 			children = (
 				F3B7BE0C1F05F21C00AFC255 /* AppDelegate.swift */,
 				F3B7BE0E1F05F21C00AFC255 /* ViewController.swift */,
+				F3B7BE1E1F06017800AFC255 /* FactProvider.swift */,
+				F3E7ECEA1F06215F007564BB /* BackgroundColorProvider.swift */,
 				F3B7BE101F05F21C00AFC255 /* Main.storyboard */,
 				F3B7BE131F05F21C00AFC255 /* Assets.xcassets */,
 				F3B7BE151F05F21C00AFC255 /* LaunchScreen.storyboard */,
@@ -139,6 +145,8 @@
 			files = (
 				F3B7BE0F1F05F21C00AFC255 /* ViewController.swift in Sources */,
 				F3B7BE0D1F05F21C00AFC255 /* AppDelegate.swift in Sources */,
+				F3E7ECEB1F06215F007564BB /* BackgroundColorProvider.swift in Sources */,
+				F3B7BE1F1F06017800AFC255 /* FactProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +310,7 @@
 				F3B7BE1D1F05F21C00AFC255 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
